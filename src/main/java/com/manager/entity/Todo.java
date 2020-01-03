@@ -43,7 +43,7 @@ public class Todo implements Serializable{
 	private String description;
 	
 	@Column(name = "DueDate")
-	private Date dueDate;
+	private String dueDate;
 
 	public long getTodoId() {
 		return todoId;
@@ -77,11 +77,11 @@ public class Todo implements Serializable{
 		this.description = description;
 	}
 
-	public Date getDueDate() {
+	public String getDueDate() {
 		return dueDate;
 	}
 
-	public void setDueDate(Date dueDate) {
+	public void setDueDate(String dueDate) {
 		this.dueDate = dueDate;
 	}
 	
